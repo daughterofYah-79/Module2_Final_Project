@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #243e63;
+}
+
+/*
+ Global Styles
+    */
+
+ a{
+    text-decoration: none;    
+ }
+
+  a:hover{
+     text-decoration: underline;
+ }
+
+ li{
+    list-style-type:none;
+}
+
+ .row{
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ 
+ /*
+ Navigation
+    */
+  nav {
+    padding-top: 32px;    
+}  
+
+ .nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .nav_logo{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding-bottom: 4px;
+ }
+
+ .nav_logo--img {
+    height: 40px;
+    width: 40px;
+}
+
+.nav_logo--title{
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 12px;
+    color: #243e63;
+    padding-bottom: 2PX;
+    letter-spacing: 0.6px;
+}  
+
+.nav_links{
+    display: flex;
+    align-items: center;
+}
+
+.nav_link{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 24px;
+}
+
+.nav_link:hover{
+    text-decoration: underline;
+}
+
+.nav_link--primary{
+    background-color: #6415ff;
+    color: #fff;
+    padding: 10px 32px;
+    border-radius: 20px;
+}
+.nav_link--primary:hover{
+    text-decoration: none;
+    background-color: rgba(80, 17, 204);
+    color: white;
+}
+
+/*
+ Header/Landing 
+    */
+    
