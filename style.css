@@ -193,6 +193,15 @@ img{
     padding-right: 128px;
     opacity: 0.5;
 }
+
+.header_img--wrapper{
+    width: calc(100% - 40px);
+}
+
+.header_img{
+    width: 100%;
+    max-width: 768px;
+}
  
  
 
