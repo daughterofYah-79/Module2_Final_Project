@@ -54,6 +54,10 @@ section{
     padding: 0 32px;
 }
 
+.container{
+    padding: 96px 0;
+} 
+
  .row{
     width:100%;
     max-width: 1200px;
@@ -63,6 +67,23 @@ section{
  .purple{
     color: #6415ff;
  }
+
+.btn {
+    max-width: 136px;
+    background-color: #6415ff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 500px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+ .btn:hover {
+    background-color: rgba(60, 13, 153);
+}
 
  #features .section_title, .section_para, #pricing {
       text-align: center;
@@ -137,9 +158,7 @@ section{
  Header/Landing 
     */
 
-.container{
-    padding: 96px 0;
-} 
+
 
  header .row{
     display: flex;
@@ -182,7 +201,7 @@ section{
  }
 
  .header_email--btn{
-    z-index: 2;
+    z-index:2;
     margin: 8px;
     height: calc(100% - 16px);
     border-radius: 500px;
@@ -193,11 +212,9 @@ section{
     font-weight: 700;
     font-size: 16px;
     transition: all 300ms ease;
+    cursor: pointer; 
  }
 
- .header_email--btn:hover {
-    background-color: rgba(60, 13, 153);
-}
 
 .header_customer--title{
     margin-top: 80px;
@@ -306,6 +323,40 @@ section{
     color:rgb(124, 139, 161);
     line-height: 2;
     font-weight: 500;
+}
+
+/*
+Quality Work Section
+
+*/
+
+.quality_description{
+    display: flex;
+}
+
+.quality_description--wrapper, .quality_img--wrapper{
+    width: 50%;
+}
+
+.quality_description--wrapper{   
+    display: flex;
+    flex-direction: column;
+}
+
+#quality .btn {
+    margin-top: 32px;
+}
+
+.quality_img--wrapper{
+    border-radius: 4px;
+    border: 1px solid rgb(229, 231, 235);
+    position: relative;
+    margin: 0 56px;
+    z-index: 2;      
+}
+
+.quality_img {
+    z-index: 1;
 }
 
  
