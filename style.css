@@ -357,6 +357,64 @@ Quality Work Section
 
 .quality_img {
     z-index: 1;
+    position: absolute;
+}
+
+/* STEPS SECTION
+    */
+.steps_description{
+    display: flex;
+}
+
+
+   .steps_description--wrapper, .steps_img--wrapper{
+        width: 50%;
+    }
+
+.steps_img--wrapper{
+    position: relative;
+    margin: 0 56px;
+    z-index: 2;      
+}    
+
+.steps_description--wrapper{   
+    display: flex;
+    flex-direction: column;
+}
+
+.step{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;    
+}
+
+.step_number{
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.step_description{
+    margin-left: 24px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.step_title{
+    font-weight: 600;
+    font-size: 20px;
+    color: #243e63;
+    line-height: 1;
+}
+
+.step_para{
+    font-size: 14px;
+    color: #718096;
+    margin-top: 12px;
+    font-weight: 500;
+    line-height: 2;
 }
 
  
