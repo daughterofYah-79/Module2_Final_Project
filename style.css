@@ -272,7 +272,7 @@ section{
 }
 
 .section__title{
-    font-size: 48px;
+    font-size: 46px;
     font-weight: 900;
     color: rgb(36, 62, 99);
     line-height: 1.5;
@@ -649,14 +649,23 @@ Testimonials Section
 */
 .testimonials__description{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.testimonials__img--wrapper , .testimonials__description--wrapper{
+.testimonials__img--wrapper, .testimonials__description--wrapper{
     width: 50%;
 }
 
 .testimonials__img{
     width: 100%;
+}
+
+.testimonials__description--wrapper{
+    padding-left: 64px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .testimonial{
