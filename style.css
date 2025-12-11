@@ -829,4 +829,37 @@ Get Started Section
     background-color: #F7FAFC;
 }
 
+/*
+Footer
+*/
+
+footer{
+    background-color: #6415FF;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link{
+    width: calc(100% / 5);
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.link__title{
+    color: #f7fafc;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.footer__link{
+    color: #f7fafc;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+       
+}
 
