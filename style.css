@@ -121,6 +121,87 @@ section{
  /*
   End Global Styles
     */
+
+/*
+Hamburger Menu
+
+*/
+.btn__menu{
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    color: #243e63;
+    display: none;
+}
+
+.menu__backdrop{
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 378px;
+    margin: 24px 16px;
+    padding: 16px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid rgb(229, 231, 235);
+}
+
+.menu--open .menu__backdrop{
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open{
+    max-height: 100vh;
+    overflow-y: hidden;
+
+}
+
+.menu__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:100%
+}
+
+.menu__list{
+    padding: 16px 0;
+}
+
+.menu__link{
+    font-size: 16px;
+    font-weight: 600;
+    color: #243e63;
+}
+
+.menu__link--primary{
+    color: #f7fafc;
+    padding: 12px 32px;
+    background: #6415ff;
+    border-radius: 500px;
+    border: none;
+}
+
+.btn__menu--close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: #243e63;
+}
+
+
  
  /*
  Navigation
@@ -975,6 +1056,75 @@ footer{
     cursor: pointer;
     transition: all 300ms ease;
 }
+
+/*MOBILE RESPONSIVENESS  SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
+
+@media (max-width: 1280px) {
+    header__img{
+        max-width: 512px;
+    }
+    header .row {
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .btn__menu {
+        display: block;
+    }
+    header .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        padding: 80px 32px;
+    }
+}
+
+@media(max-width: 768px) {
+    #quality .row,
+    #values .row {
+        flex-direction: column-reverse;
+    }
+    #steps .row,
+    #testimonials .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    #pricing .row {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 640px) {
+    .container {
+        padding: 80px 0;
+    }
+    .nav__logo {
+        margin: 8px 0;
+        padding-bottom: 4px;
+    }
+    main {
+        margin-bottom: 80px;
+    }
+}
+
+/* SMALL PHONES< LARGE SMARTPHONES, TABLETS */
+@media (max-width: 869px) {
+    .nav__links{
+        display: none;
+    } 
+    .btn__menu{
+        display: block;
+    }    
+}
+
+
+
+
+
+
 
 
 
