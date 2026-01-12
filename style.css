@@ -1090,26 +1090,25 @@ footer{
         align-items: center;
     }
      h1{
-        font-size: 28px;
+        font-size: 30px;
     }
 
   
     .header__description{
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .header__description--wrapper{
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .header__description--wrapper{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
     }    
 
-    .header__description, .header__img--wrapper {
+    .header__description--wrapper, .header__img--wrapper {
         width: 100%;
-        max-width: 950px;
+        max-width: 512px;
         margin: 0 auto;
     }
 
@@ -1228,7 +1227,7 @@ footer{
     }
 }
 
-/*@media(max-width: 768px) {
+@media (max-width: 768px) {
     #quality .row,
     #values .row {
         flex-direction: column-reverse;
@@ -1241,8 +1240,19 @@ footer{
     #pricing .row {
         margin-top: 40px;
     }
+   
+   .testimonial__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        background: #edf2f7;
+        border-radius: 50%;
+        margin: 0 12px;
+        transition: all 300ms ease;
+   }
 }
-
+/*
 @media(max-width: 640px) {
     .container {
         padding: 80px 0;
@@ -1254,7 +1264,8 @@ footer{
     main {
         margin-bottom: 80px;
     }
-}*/
+}
+    */
 
 /* SMALL PHONES< LARGE SMARTPHONES, TABLETS 
 @media (max-width: 895px) {
