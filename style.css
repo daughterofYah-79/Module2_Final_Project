@@ -1237,6 +1237,7 @@ footer{
         padding: 0 32px;
     }
 }
+/* TheMedia 768px width and below  SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
 
 @media (max-width: 768px) { 
  
@@ -1268,19 +1269,40 @@ footer{
         align-items: center;      
     }
 
-    .quality__img--wrapper{
+    .quality__img--wrapper, .steps__img--wrapper, .steps__description--wrapper {
         width: 100%;
         max-width: 448px;
     }
 
+    .steps__description{
+        flex-direction: column;
+        text-align: center;
+        }
+         }
+        .step__title, .step__number{
+            text-align: center;
+        }
+
+        .step{
+            flex-direction: column;
+            align-items: center;
+       
+
+     
+
+     
+
+   
+   
+
+   
+
+  
+
 
 
        
-    #steps .row,
-    #testimonials .row {
-        flex-direction: column;
-        align-items: center;
-    }
+   
     #pricing .row {
         margin-top: 40px;
     }
